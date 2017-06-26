@@ -1,5 +1,7 @@
 # Xlettuce
-A keyboard-controlled grid tiling manager for X / Linux, written in Python 3.  I use it in Kubuntu.  I wrote this because I use a 43" 4k TV as a monitor.  The standard tiling implementations (tile to the left half of the screen or the right half of the screen) don't really work on a monitor this big.  Xlettuce solves this problem by tiling to a configurable-sized grid - I typically use a 6x4 or 10x4 grid.  Xlettuce tiles windows along this grid so that they occupy one or more grid slots.
+A keyboard-controlled grid tiling manager for X / Linux, written in Python 3.  GPL v3 licensed.  Still in a beta state, but it works pretty well for me in Kubun tu 17.04 at this point.
+
+I wrote this because I use a 43" 4k TV as a monitor.  The standard tiling implementations (tile to the left half of the screen or the right half of the screen) don't really work on a monitor this big.  Xlettuce solves this problem by tiling to a configurable-sized grid - I typically use a 6x4 or 10x4 grid.  Xlettuce tiles windows along this grid so that they occupy one or more grid slots.
 
 ## Usage
 
