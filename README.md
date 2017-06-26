@@ -61,6 +61,8 @@ You can also send the currently active window to another desktop.  To do this, P
 ## Installing
 Download the "xlettuce" folder, and just run the xlettuce.py script.
 
+By default, the script will use CAPS_LOCK as a trigger key.  You may have to disable caps_lock in your keyboard preferences to prevent caps from being activated/deactivated.
+
 ### Dependencies:
 Python-Xlib - https://github.com/python-xlib/python-xlib
 You can install python-xlib in many flavours of Ubuntu/debian with "apt install python3-xlib", and I think the pip3 command for python-xlib is "sudo pip3 install xlib"
