@@ -208,10 +208,10 @@ class Xlettuce:
         px_offset={"up":-30, "down":30}
         grid_offset={"up":0, "down":1}
         newY = self.screen.monitor[self.currentMonitor].workarea.screenY + ( ( self.activeWindow.info['containergeom'].y - self.screen.monitor[self.currentMonitor].workarea.screenY + px_offset[dir] ) // self.screen.monitor[self.currentMonitor].lattice.slotHeight + grid_offset[dir] ) * self.screen.monitor[self.currentMonitor].lattice.slotHeight
-        if newY < self.screen.monitor[self.currentMonitor].workarea.screenY :
-            newY = self.screen.monitor[self.currentMonitor].workarea.screenY
-        if newY > self.screen.monitor[self.currentMonitor].workarea.height + self.screen.monitor[self.currentMonitor].workarea.screenY :
-            newY = self.screen.monitor[self.currentMonitor].workarea.height + self.screen.monitor[self.currentMonitor].workarea.screenY - self.screen.monitor[self.currentMonitor].lattice.slotHeight
+        if newY < self.screen.panel_top :
+            newY = self.screen.panel_top
+        if newY > self.screen.avail_height + self.screen.panel_top:
+            newY = self.screen.avail_height + self.screen.panel_top - self.activeWindow.info['fullheight']
         
         return newY
         
@@ -221,7 +221,7 @@ class Xlettuce:
         px_offset={"left":-30, "right":30}
         grid_offset={"left":0, "right":1}
         newX = self.screen.monitor[self.currentMonitor].workarea.screenX + ( ( self.activeWindow.info['containergeom'].x - self.screen.monitor[self.currentMonitor].workarea.screenX + px_offset[dir] ) // self.screen.monitor[self.currentMonitor].lattice.slotWidth + grid_offset[dir] ) * self.screen.monitor[self.currentMonitor].lattice.slotWidth
-        if newX < self.screen.monitor[self.currentMonitor].workarea.screenX :
+        if newX < self.screen.panel_top :
             newX = self.screen.monitor[self.currentMonitor].workarea.screenX
         if newX > self.screen.monitor[self.currentMonitor].workarea.width + self.screen.monitor[self.currentMonitor].workarea.screenX :
             newX = self.screen.monitor[self.currentMonitor].workarea.width + self.screen.monitor[self.currentMonitor].workarea.screenX - self.screen.monitor[self.currentMonitor].lattice.slotWidth
