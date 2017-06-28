@@ -55,6 +55,7 @@ You can also send the currently active window to another desktop.  To do this, P
 - Add hotkey macro/launcher keys - pressing CAPS + launcher key will launch commonly used apps or commands, or run a macro.
 - Add  Heads up display functions - pressing hotkeys will call up (start or toggle show/hide) commonly used apps - terminals, file managers, text editors, whatever...  These apps would pop up in the same location on the monitor, along the lines of what Yakuake or Guake work.
 - Add feature to store sessions - what windows are open, where are they, etc.  So you could load up a preconfigured session with the apps you want open, and the windows right where you want them.
+- GUI / system tray icon while running
 
 
 
